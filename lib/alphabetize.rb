@@ -4,8 +4,8 @@ I18n.enforce_available_locales = false
 
 def alphabetize(arr)
 
-  newArray = arr.sort_by do |e|
-    I18n.transliterate e
+  newArray = arr.sort_by do |index|
+    I18n.transliterate index
   end
 
   newArray
